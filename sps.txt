@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If Statement and Input Boxes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Interactive JavaScript with Input Boxes</h2>
+  <p>Click the button below to enter your age. The page will check if you are an adult or a minor.</p>
+  
+  <button onclick="checkAge()">Click Me</button>
+</div>
+
+<script>
+  function checkAge() {
+    // Prompt the user to enter their age
+    var age = prompt("Please enter your age:");
+
+    // Check if the user entered a valid number
+    if (age != null && !isNaN(age)) {
+      // Convert the input to a number
+      age = Number(age);
+      
+      // If age is 18 or more, display "Adult", else display "Minor"
+      if (age >= 18) {
+        alert("You are an adult.");
+      } else {
+        alert("You are a minor.");
+      }
+    } else {
+      // If input is not valid
+      alert("Please enter a valid number for age.");
+    }
+  }
+</script>
+
+</body>
+</html>

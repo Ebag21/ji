@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson Summaries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styling */
+    body {
+      background: linear-gradient(to bottom right, #d9b99b, #fdf6e4);
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      border: 5px solid #4a3c31;
+      background-color: #f8e2cc;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      margin: 20px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #4a3c31;
+    }
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+    .lesson {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      border-left: 6px solid #4a3c31;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .lesson:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    .lesson h2 {
+      font-size: 1.5rem;
+      color: #4a3c31;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
+    }
+    .lesson p, .lesson ul {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #4a3c31;
+    }
+    .lesson ul {
+      padding-left: 20px;
+    }
+    .lesson ul li {
+      margin-bottom: 10px;
+    }
+    hr {
+      border: 0;
+      height: 2px;
+      background: #4a3c31;
+      margin: 20px auto;
+      width: 90%;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #4a3c31;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><b><u>Lesson Summaries</u></b></h1>
+</header>
+
+<main>
+  <!-- Lesson 1 -->
+  <div class="lesson">
+    <h2>Lesson 1: Events in JavaScript</h2>
+    <p>
+      Events are actions or occurrences that can be detected by JavaScript, enabling dynamic interaction with a webpage. Events are usually triggered by user actions like mouse clicks, keyboard strokes, form submissions, or page load events.
+    </p>
+    <h3>What are Events?</h3>
+    <p>
+      Events allow JavaScript to detect user interaction or other actions and react accordingly. Some examples of events are:
+    </p>
+
+    <!-- Table for Event Attributes -->
+    <h3>Event Attributes</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Event Attribute</th>
+          <th>Short Definition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>onabort</b></td>
+          <td>The loading of an event is interrupted.</td>
+        </tr>
+        <tr>
+          <td><b>onblur</b></td>
+          <td>An element loses focus.</td>
+        </tr>
+        <tr>
+          <td><b>onchange</b></td>
+          <td>The user changes the content of a field.</td>
+        </tr>
+        <tr>
+          <td><b>onclick</b></td>
+          <td>Mouse click of an object.</td>
+        </tr>
+        <tr>
+          <td><b>ondblclick</b></td>
+          <td>Double mouse click of an object.</td>
+        </tr>
+        <tr>
+          <td><b>onerror</b></td>
+          <td>An error occurs when loading a document or image.</td>
+        </tr>
+        <tr>
+          <td><b>onfocus</b></td>
+          <td>An element gets focus.</td>
+        </tr>
+        <tr>
+          <td><b>onkeydown</b></td>
+          <td>A keyboard key is pressed.</td>
+        </tr>
+        <tr>
+          <td><b>onkeypress</b></td>
+          <td>A keyboard key is held down.</td>
+        </tr>
+        <tr>
+          <td><b>onkeyup</b></td>
+          <td>A keyboard key is released.</td>
+        </tr>
+        <tr>
+          <td><b>onload</b></td>
+          <td>A page or image is finished loading.</td>
+        </tr>
+        <tr>
+          <td><b>onmousedown</b></td>
+          <td>A mouse button is pressed.</td>
+        </tr>
+        <tr>
+          <td><b>onmousemove</b></td>
+          <td>The mouse is moved.</td>
+        </tr>
+        <tr>
+          <td><b>onmouseout</b></td>
+          <td>The mouse is moved off an element.</td>
+        </tr>
+        <tr>
+          <td><b>onmouseover</b></td>
+          <td>The mouse is moved over an element.</td>
+        </tr>
+        <tr>
+          <td><b>onmouseup</b></td>
+          <td>A mouse button is released.</td>
+        </tr>
+        <tr>
+          <td><b>onreset</b></td>
+          <td>The reset button is clicked.</td>
+        </tr>
+        <tr>
+          <td><b>onresize</b></td>
+          <td>A window or frame is resized.</td>
+        </tr>
+        <tr>
+          <td><b>onselect</b></td>
+          <td>Text is selected.</td>
+        </tr>
+        <tr>
+          <td><b>onsubmit</b></td>
+          <td>The submit button is clicked.</td>
+        </tr>
+        <tr>
+          <td><b>onunload</b></td>
+          <td>The user exits the page.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Popup Boxes</h3>
+    <p>
+      Popup boxes are used to display messages, gather input, or confirm actions with users. JavaScript provides three types of popup boxes:
+    </p>
+
+    <!-- Popup Boxes Section -->
+    <h4>Alert Box</h4>
+    <p>
+      An alert box is typically used to display a message that requires the user to acknowledge. It is often used for warnings or informational messages.
+    </p>
+    <pre><code>alert("message");</code></pre>
+
+    <h4>User-Input Prompt Box</h4>
+    <p>
+      A prompt box is used to ask the user for input. The user will have to click "OK" or "Cancel." If "OK" is clicked, the prompt box returns the value entered by the user.
+    </p>
+    <pre><code>prompt("message", "defaultvalue");</code></pre>
+
+    <h4>Confirm Box</h4>
+    <p>
+      A confirm box is used to verify an action with the user. The user can choose "OK" or "Cancel." If "OK" is chosen, it returns true; if "Cancel" is chosen, it returns false.
+    </p>
+    <pre><code>confirm("message");</code></pre>
+  </div>
+
+  <!-- Lesson 3: Switch Statement and Functions -->
+  <div class="lesson">
+    <h2>Lesson 3: Switch Statement and Functions</h2>
+    <p>
+      In the previous lesson, we used the If Else If statement to test multiple conditions. What if there are many options? The If Else If statement can become tedious. To address this, JavaScript offers a simpler way to handle multiple conditions: the Switch statement.
+    </p>
+    <h3>Switch Statement</h3>
+    <p>
+      The Switch statement is used when a condition may have multiple possible results, and different operations are performed based on each result or input. It helps avoid writing multiple If Else statements when dealing with many options.
+    </p>
+    <pre><code>switch(expression) {
+  case value1:
+    // code block to be executed if the expression equals value1
+    break;
+  case value2:
+    // code block to be executed if the expression equals value2
+    break;
+  default:
+    // code block to be executed if no case matches
+}</code></pre>
+
+    <h3>Functions</h3>
+    <p>
+      A function is a self-contained block of code that performs a specific task when it is called. Functions allow you to reuse code and make your programs more organized and modular. Functions are defined using the `function` keyword followed by the function name, arguments (optional), and a block of code.
+    </p>
+    <pre><code>function functionName(param1, param2) {
+  // function code
+}</code></pre>
+    <p>
+      In this example, `param1` and `param2` are the arguments passed to the function, and they provide additional information needed for the function to process.
+    </p>
+
+    <h4>Predefined and User-Defined Functions</h4>
+    <p>
+      Examples of predefined functions are `document.write()` and `alert()`. You can also create your own functions, like `add()` or `check()`, which are called user-defined functions.
+    </p>
+  </div>
+
+  <!-- Lesson 4: Loops -->
+  <div class="lesson">
+    <h2>Lesson 4: Loops in JavaScript</h2>
+    <p>
+      Sometimes, you need to repeat a block of code multiple times until a certain condition is met. This is done using loops. In JavaScript, there are several types of loops:
+    </p>
+    <ul>
+      <li><b>For loop:</b> Loops through a block of code a specified number of times.</li>
+      <li><b>While loop:</b> Loops through a block of code while the condition is true.</li>
+      <li><b>Do-while loop:</b> Similar to the while loop, but it executes the code block at least once, even if the condition is false.</li>
+      <li><b>For-in loop:</b> Loops through the elements of an array.</li>
+    </ul>
+    <h3>Break and Continue Statements</h3>
+    <p>
+      You can control the flow of a loop using the `break` and `continue` statements. The `break` statement immediately exits the loop, while the `continue` statement skips the current iteration and proceeds to the next one.
+    </p>
+  </div>
+</main>
+
+</body>
+</html>
